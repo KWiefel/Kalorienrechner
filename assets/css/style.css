@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  background-color: #4158d0;
+  background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+}
+html main {
+  display: flex;
+  justify-content: center;
+}
+html main form {
+  background-color: rgba(173, 216, 230, 0.4);
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px whitesmoke;
+  width: fit-content;
+  padding: 2em;
+  margin-top: 10%;
+}
+html main form h2 {
+  padding-bottom: 16px;
+}
+html main form .table {
+  display: grid;
+  grid-template-columns: 45% repeat(2, 1fr);
+  background-color: rgba(65, 89, 208, 0.4941176471);
+  margin-top: 32px;
+  border-radius: 20px;
+  padding-left: 16px;
+  padding: 1em;
+  color: whitesmoke;
+  font-weight: 600;
+}
+html main form .table p {
+  padding: 8px;
+}
+html main form .table p:nth-of-type(1) {
+  background-color: #4158d0;
+  border-radius: 0px;
+  padding: 8px;
+}
+html main form .table div:nth-of-type(2), html main form .table div:nth-of-type(3) {
+  text-align: center;
+}
+html main form div input::-webkit-outer-spin-button, html main form div input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+html main form div #bodyHeight,
+html main form div #age,
+html main form div #weight,
+html main form div #select {
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 20px;
+  border: none;
+  margin: 16px 0px;
+}
+html main form div #bodyHeight:focus,
+html main form div #age:focus,
+html main form div #weight:focus,
+html main form div #select:focus {
+  outline: none;
+}
+html main form div #submit {
+  width: 100%;
+  border-radius: 20px;
+  padding: 1em;
+  border: none;
+  background-color: #4158d0;
+  color: white;
+  margin-top: 16px;
+}
+html main form div p {
+  border-radius: 20px;
+  padding-left: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,78 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project_Optimalgewicht-Rechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <form onsubmit="return false">
+        <h2>Kalorienrechner</h2>
+        <div>
+          <label for="bodyHeight">Körpergröße:</label>
+          <input type="number" placeholder="Größe in cm" id="bodyHeight" />
+        </div>
+        <div>
+          <label for="age">Alter:</label>
+          <input type="number" placeholder="Alter in Jahren" id="age" />
+        </div>
+        <div>
+          <label for="weight">Gewicht:</label>
+          <input type="number" placeholder="Gewicht in Kg" id="weight" />
+        </div>
+        <div>
+          <input type="radio" name="gender" id="female" value="female" />
+          <label for="female">Weiblich</label>
+          <input type="radio" name="gender" id="male" value="male" />
+          <label for="male">Männlich</label>
+        </div>
+        <div>
+          <label for="select">Bitte auswählen:</label>
+
+          <select name="" id="select">
+            <option value="0.95">Schlafen</option>
+            <option value="1.2">Nur sitzen oder Liegen</option>
+            <option value="1.5">
+              Ausschließlich sitzende Tätigkeit mit wenig oder keiner
+              körperlichen Aktivität in der Freizeit, z.B. Büroarbeit
+            </option>
+            <option value="1.7">
+              Sitzende Tätigkeit mit zeitweilig gehender oder stehender
+              Tätigkeit, z.B. Studierende, Fließbandarbeiter, Laboranten,
+              Kraftfahrer
+            </option>
+            <option value="1.9">
+              Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer,
+              Kellner, Handwerker, Mechaniker, Hausfrauen
+            </option>
+            <option value="2.2">
+              Körperlich anstrengende berufliche Arbeit
+            </option>
+          </select>
+        </div>
+        <div>
+          <input onclick="check()" type="submit" value="Submit" id="submit" />
+        </div>
+        <div class="table">
+          <div>
+            <p>&nbsp;</p>
+            <p>Grundumsatz</p>
+            <p>Gesamtumsatz</p>
+          </div>
+          <div>
+            <p>kcal</p>
+            <p class="output">0</p>
+            <p class="outputSum">0</p>
+          </div>
+          <div>
+            <p>kJ</p>
+            <p class="outputKjl">0</p>
+            <p class="outputSumKjl">0</p>
+          </div>
+        </div>
+      </form>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
