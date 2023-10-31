@@ -4,6 +4,8 @@
 // 655.1 + (9.6 * Körpergewicht in kg) + (1.8 * Körpergröße in cm) – (4.7 * Alter in Jahren) = Grundumsatz
 // Achtung: Das Ergebnis wird in Kilokalorien ausgegeben!
 
+// Um den Gesamtumsatz auszurechnen, sollte der PAL-Faktor (PAL=Physical Activity Level) mit dem Grundumsatz multipliziert werden.
+
 const bodyHeight = document.body.querySelector("#bodyheight");
 const age = document.body.querySelector("#age");
 const weight = document.body.querySelector("#weight");
