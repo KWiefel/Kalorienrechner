@@ -22,12 +22,20 @@ html {
       background-color: rgba(173, 216, 230, 0.4);
       border-radius: 20px;
       box-shadow: 0px 0px 10px whitesmoke;
-      width: fit-content;
       padding: 2em;
-      margin-top: 10%;
+      margin-top: 5%;
 
       h2 {
         padding-bottom: 16px;
+      }
+
+      .radio {
+        padding-bottom: 16px;
+        padding-top: 8px;
+
+        label {
+          padding-right: 16px;
+        }
       }
 
       .table {
@@ -93,6 +101,11 @@ html {
           background-color: #4158d0;
           color: white;
           margin-top: 16px;
+
+          &:hover {
+            box-shadow: 0px 0px 5px white;
+            background-color: #4159d0a0;
+          }
         }
 
         p {
